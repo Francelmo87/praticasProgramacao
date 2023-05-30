@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estruturas de condições </title>
+</head>
+<body>
+    <script>
+
+        // A estrutura de switch se usa apenas um típo de variável
+        /*
+
+        verificar o aumento de salário de acordo com os seguintes cargos:
+        Estagiáro: 100%
+        Analísta: 50%
+        Gerente: 30%
+        Presidente: 10%
+        */
+
+        const cargo = prompt('Digite um cargo: ')
+        let aumento = 0
+
+
+        switch(cargo){
+            case 'Estagiário': aumento = "100%"; break;
+            case 'Analísta': aumento = "50%"; break;
+            case 'Gerente': aumento = "30%"; break;
+            case 'Presidente': aumento = "20%"; break;
+            default: alert('Por favor digite um cargo válido')
+        }
+
+        console.log(aumento)
+        
+    </script>
+</body>
+</html>

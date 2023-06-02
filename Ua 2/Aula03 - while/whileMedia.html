@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estruturas de condições </title>
+</head>
+<body>
+    <script>
+
+        const qtd = prompt('Digite quantas notas: ')
+        let contador = 1
+        let soma = 0
+        let nota = 0
+        while(contador <= qtd ){
+            nota = Number(prompt('Digite a nota '+ contador))
+            soma = soma + nota
+            contador++
+        }
+
+        let media = soma / qtd
+
+        console.log('Quantidade de notas : ' + qtd)
+        console.log('Soma: ' + soma)
+        console.log('Média: ' + media)
+
+        const resultado = media >= 7 ?'Aprovado': 'Reprovado'
+
+        console.log('Resultado: '+ resultado)
+
+    </script>
+</body>
+</html>

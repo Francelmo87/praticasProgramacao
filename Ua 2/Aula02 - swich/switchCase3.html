@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estruturas de condições </title>
+</head>
+<body>
+    <script>
+
+        // A estrutura de switch se usa apenas um típo de variável
+        /*
+
+        verificar o aumento de salário de acordo com os seguintes cargos:
+        Estagiáro: 100%
+        Analísta: 50%
+        Gerente: 30%
+        Presidente: 10%
+        */
+
+        const n1 = Number(prompt('Digite a nota 1'))
+        const n2 = Number(prompt('Digite a nota 2'))
+        const n3 = Number(prompt('Digite a nota 3'))
+        const n4 = Number(prompt('Digite a nota 4'))
+
+        const media = (n1 + n2 + n3 + n4) / 4
+
+        console.log('A média é: ' + media)
+        //Primeira forma de fazer if/else
+        /* if(media >= 7){
+        console.log('Aprovado')
+        }else{
+        console.log('Reprovado')
+        }
+        */
+
+       // segunda forma de fazer a if/else
+       // media >= 7 ? console.log('Aprovado') : console.log('Reprovado') 
+
+       /* Terceira forma de fazer if/else
+       let mensagem = ''
+       if(media >= 7){
+        mensagem = 'Aprovado'
+       }else{
+        mensagem = 'Reprovado'
+       }
+
+       console.log(mensagem)
+       */
+      
+       // quarta forma de fazer p if/else
+
+       let mensagem = media >= 7 ? 'aprovado': 'Reprovado'
+       console.log(mensagem)
+    </script>
+</body>
+</html>

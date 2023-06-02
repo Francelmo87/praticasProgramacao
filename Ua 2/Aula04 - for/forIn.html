@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Estrutura de Repetição - FOR</title>
+    </head>
+    <body>
+        <script>
+
+            // Isso se chama de objeto em JS {atributo:'valor'}
+            const pessoa = {
+                nome: 'Francelmo',
+                telefone: '(88) 99365-3569',
+                endereco: 'ABC'
+            }
+            
+            //Acesso ao conteúdo é dado pela objeto.atributo ou  objeto['atributo']    
+            //console.log(pessoa.nome)
+            //console.log(pessoa['telefone'])
+
+            // Fazendo looping com for
+            for(let atributo in pessoa){
+                // mostra apenas os atributos
+                // console.log(atributo )
+                // Mostra apenas os valores
+                // console.log(pessoa[atributo])
+                // Mostra os dois valores (atributo e valores)
+                // console.log(atributo + ' -> ' + pessoa[atributo])
+            }
+                
+        </script>    
+    </body>
+</html>

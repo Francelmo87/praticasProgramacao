@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+
+</head>
+<body>
+    <script>
+
+        // Array ou variável Composta do tipo string
+        const carros = ['Gol',
+            'Fusca', 
+            'virtus', 
+            'ka'
+        ]
+
+        // Array ou variável Composta do tipo int
+        //const anos = [1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022]
+
+        // Array é dinamico - pode ter de vario tipo dentro da mesa variável
+        // const  global = ['francelmo', 2023]
+
+    /*
+        // Apresenta em formato de tabela com o indice(index)
+        console.table(carros)
+        console.log(carros[1])
+
+        // Com uso do for   
+        for(let elemento of carros){
+            console.log(elemento)
+        }
+     
+        for(let i=0; i<4; i++){
+            console.log(carros[i])
+        }
+
+    */    
+     
+    
+    /*  
+        -----------------------------------------------------------
+        Para adicionar uma variável ao final array (lista)
+            push -> arrayName.push(novo valor)
+            Ex: carros.push('Fiesta')
+        Para adicionar uma variável no inicio do array (lista)
+            unshift arrayName.unshift(novo valor)
+            Ex: carros.unshift('Fiesta')
+        Para retirar ou excluir uma variável do final do array (lista)
+            pop -> arrayName.pop()
+            Ex: carros.pop()
+        Para retirar ou excluir uma variável do array (lista)
+             shift -> arrayName.shift()
+             Ex: carros.shift()
+        * Para retirar um item especifico do array (lista)
+            splice -> arrayName.splice(posiçãoInicial,quantosExluir)
+            Ex: carros.splice(1,1) -> Exclui 1 item apartir da posição 1
+            Ex: carros.splice(1,2) -> Exclui 2 item apartir da posição 1
+            Ex: carros.splice(2,3) -> Exclui 3 item apartir da posição 2
+        * Para inserir um item
+            splice -> arrayName.splice(posiçãodesjada,0,'novoValor')
+            Ex: carros.splice(1,0, 'uno') -> Adiciona o item 'uno' na posição 1
+        * Para Substituir um item
+            splice -> arrayName.splice(posiçãodesjada,1,'novoValor')
+             Ex: carros.splice(1,1, 'uno') -> Substitui (retira o item1) o item 'uno' na posição 1
+        Para ordenar o array     
+            Sort -> arrayName.sort()
+            Ex: carros.sort()
+        ----------------------------------------------------------
+    */
+
+    console.table(carros)
+    //_________________________________
+    
+    //carros.push('Fiesta')
+    //console.table(carros)
+
+    //-------------------------------------
+    //carros.pop()
+    //console.table(carros)
+
+    //-------------------------------------    
+    //carros.unshift('Fiesta')
+    //console.table(carros)
+
+    //-------------------------------------
+    //carros.unshift('palio')
+    //console.table(carros)
+
+    //------------------------------------    
+    //carros.shift()
+    //console.table(carros)
+
+    //------------------------------------    
+    //carros.splice(1,1)
+    //console.table(carros)
+
+    //------------------------------------    
+    //carros.splice(1,0,'Uno')
+    //console.table(carros)
+
+    //------------------------------------    
+    //carros.splice(1,1,'Uno')
+    //console.table(carros)
+
+    //------------------------------------
+    carros.sort()
+    console.table(carros)
+
+
+
+    
+    </script>
+</body>
+</html>
+
+

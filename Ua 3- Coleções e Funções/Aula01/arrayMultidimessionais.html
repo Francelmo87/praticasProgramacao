@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays Multidemensionais</title>
+
+</head>
+<body>
+    <script>
+
+        // Array ou variável Composta do tipo string
+        const nomes = [
+            'Orion',
+            'Maria', 
+            'José', 
+            'Antonio'
+        ]
+
+        const idades = [
+            18,20,24,30,36
+        ]
+
+        /*
+            Abre uma estrutura parecida com uma matriz para acessar um dado dentro vc precisa
+            referenciar a (objeto[Índice da linha][Índice da coluna]). 
+            Ex. 
+            console.table(notas[1][2]) -> vai mostrar o numero 2 da linha 2
+            console.table(notas[0][3]) -> vai mostrar o numero 4 da linha 1
+
+            O array Multidimensional é dinâmico também, e pode ter array dentro de array
+            [5,10,9,4],
+            [6,7,2,[0,1,3]],
+
+            onsole.table(notas[1][3][2]) -> vai mostrar o numero 3 da linha 2
+
+        */
+        const notas = [
+            [5,10,9,4],
+            [6,7,2,10],
+            [8,6,3,10]
+        ]
+
+    //------------------------------------
+    //console.log(nomes[0])
+    //console.log(idades[3])
+    console.table(notas[0][3])
+
+
+
+    
+    </script>
+</body>
+</html>
+
+

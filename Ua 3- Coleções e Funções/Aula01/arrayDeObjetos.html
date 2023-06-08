@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array de Objetos</title>
+
+</head>
+<body>
+    <script>
+
+        // Array ou variável Composta do tipo string
+        const nomes = [
+            {nome:'Francelmo', telefone: '88 99999-9999', endereco: 'ABC'},
+            {nome:'Michele', telefone: '88 88888-8888', endereco: 'XYZ'},
+            {nome:'Esdras', telefone: '88 77777-7777', endereco: 'FSB'},
+            {nome:'Abner', telefone: '88 66666-6666', endereco: 'KLM'},
+        ]
+
+        /*
+         Para acessar aos dados do objeto dentro do array de objeto
+         basta (objeto[indice].atibuto) ou (objeto[indice]['atributo']
+         Ex. (nomes[0].nome) ou (nomes[0].['nome']) -> Francelmo
+         Ex. (nomes[1].endereco) ou (nomes[1].['endereco'])  -> xyz
+         */
+        //------------------------------------
+        console.table(nomes[0].nome)
+
+
+
+    
+    </script>
+</body>
+</html>
+
+
